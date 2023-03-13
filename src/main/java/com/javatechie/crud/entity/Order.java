@@ -1,6 +1,7 @@
 package com.javatechie.crud.entity;
 
 import lombok.AllArgsConstructor;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,12 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.lang.NonNull;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,7 +26,5 @@ public class Order {
     private int qty;
     private double price;
     @CreationTimestamp
-    @Temporal(TemporalType.TIMESTAMP)
-    @NonNull
     private Date date;
 }
