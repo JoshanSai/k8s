@@ -14,6 +14,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.lang.NonNull;
 
 @Data
 @AllArgsConstructor
@@ -29,5 +30,6 @@ public class Order {
     private double price;
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
+    @NonNull
     private Date date;
 }
