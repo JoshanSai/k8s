@@ -27,4 +27,5 @@ public class Order {
     private double price;
     @CreationTimestamp
     private Date date;
+    //----
 }
